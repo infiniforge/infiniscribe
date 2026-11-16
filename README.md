@@ -62,8 +62,7 @@ are documented in its own repository.
 
 Unit tests and compilation do not establish Android grant, rendering or lifecycle
 correctness on a device. See Infinifolder's architecture audit for executed checks
-and the remaining runtime validation matrix. Original-code licensing is pending;
-see LICENSE.md. Preserve bundled third-party notices when distributing the APK.
+and the remaining runtime validation matrix. Original code is licensed under MIT; see LICENSE.md. Preserve bundled third-party notices and component terms when distributing the APK.
 
 ## Build environment discovery
 
