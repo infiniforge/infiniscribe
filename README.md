@@ -1,16 +1,25 @@
 # InfiniScribe
+InfiniScribe is InfiniForge's independent document viewer/editor for supported text, ebook, and
+document formats. Editing and format coverage vary by reader. See the [application scope and
+implementation status](docs/APPLICATION.md).
 
 Independent Android document viewer/editor and ebook reader. Application ID:
 `com.infiniscribe`; Android 8.0 (API 26) or newer. Supports text and syntax-aware
-editing, Markdown/HTML, CSV/workbooks, PDF, EPUB and other supported document legacy MindNode Touch mind maps, and
-font formats through the optional backends in libinfiniscribe. The shared image
-viewer is supplied by libinfiniui; document UI lives in this application's modules.
+editing, Markdown/HTML, CSV/workbooks, PDF, EPUB, supported legacy MindNode Touch
+mind maps, and font preview through this application's viewer modules and the
+optional backends in `libinfiniscribe`. The shared image viewer is supplied by
+`libinfiniui`; document UI lives in this application's modules.
 
 External files are selected through libinfiniselect and opened as Android content
 references. Infinifolder supplies advanced remote/container storage when installed.
 Android SAF remains functional without it. No remote clients, torrent engine,
 mounted filesystems, libinfinistore or libinfinivault are bundled in this app.
 Standard ZIP expansion needed by document formats belongs to document processing.
+
+See [InfiniScribe architecture](docs/architecture.md), [storage integration](docs/storage.md),
+and the [documentation index](docs/README.md) for app-owned boundaries and format
+coverage. Infinifolder is an optional provider companion; Infinikey has a separate
+SAF provider and does not use `libinfiniselect`.
 
 Version 0.1.1 pins the corrected libinfiniselect result handoff: the internal
 picker keeps grants already held by this application and excludes ungranted
@@ -61,8 +70,9 @@ or Android playback module. Every dependency's responsibility and public interfa
 are documented in its own repository.
 
 Unit tests and compilation do not establish Android grant, rendering or lifecycle
-correctness on a device. See Infinifolder's architecture audit for executed checks
-and the remaining runtime validation matrix. Original code is licensed under MIT; see LICENSE.md. Preserve bundled third-party notices and component terms when distributing the APK.
+correctness on a device. This README and the app-owned guides record the tested
+checks and remaining device acceptance. Original code is licensed under MIT; see
+LICENSE.md. Preserve bundled third-party notices and component terms when distributing the APK.
 
 ## Build environment discovery
 

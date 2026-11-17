@@ -3,6 +3,7 @@
 This directory documents InfiniScribe's document and ebook viewers, text editing,
 format limits, and integration with shared libraries.
 
+- [Application description and implementation status](APPLICATION.md).
 - [Application architecture](architecture.md)
 - [Storage and URI integration](storage.md)
 - [Text, markup, document, and media formats](text-and-document-formats.md)
