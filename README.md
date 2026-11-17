@@ -36,7 +36,7 @@ NDK 27.2.12479018 and CMake 3.22.1. Set `ANDROID_HOME`, or set `sdk.dir` in
 this checkout's untracked `local.properties`.
 
 ```sh
-git clone https://github.com/gretchycat/infiniscribe.git
+git clone https://github.com/infiniforge/infiniscribe.git
 cd infiniscribe
 ./build.sh --max-workers=1 --console=plain
 ```
